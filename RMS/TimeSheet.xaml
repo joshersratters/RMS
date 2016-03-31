@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="RMS.TimeSheet"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RMS"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="LayoutRoot">
+
+        <Grid.ChildrenTransitions>
+            <TransitionCollection>
+                <EntranceThemeTransition/>
+            </TransitionCollection>
+        </Grid.ChildrenTransitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title Panel -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,0">
+            <TextBlock Text="RMS" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="timesheet" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+
+        <!--TODO: Content should be placed within the following grid-->
+        <Grid x:Name="DaysOfWeek" Grid.Row="7" Grid.Column="3" Margin="19,9.5,19,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="1*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.5*"/>
+                <ColumnDefinition Width="1*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Grid.Column="0" x:Name="TextBlockDayTitle" Text="Day"/>
+                <TextBlock Grid.Row="0" Grid.Column="1" x:Name="TextBlockProjectTitleOne" Text="Project 1"/>
+                    <TextBlock Grid.Row="0" Grid.Column="3" x:Name="TextBlockProjectTitleTwo" Text="Project 2"/>
+            <TextBlock Grid.Row="1" Grid.Column="0" x:Name="TextBlockMon" Text="Mon"/>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBlockProject1Mon" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="1" Grid.Column="2" x:Name="TextBlockProject2Mon" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBlock Grid.Row="2" Grid.Column="0" x:Name="TextBlockTue" Text="Tue"/>
+            <TextBlock Grid.Row="3" Grid.Column="0" x:Name="TextBlockWed" Text="Wed"/>
+            <TextBlock Grid.Row="4" Grid.Column="0" x:Name="TextBlockThu" Text="Thu"/>
+            <TextBlock Grid.Row="5" Grid.Column="0" x:Name="TextBlockFri" Text="Fri"/>
+            <TextBlock Grid.Row="6" Grid.Column="0" x:Name="TextBlockSat" Text="Sat"/>
+            <TextBlock Grid.Row="7" Grid.Column="0" x:Name="TextBlockSun" Text="Sun"/>
+        </Grid>
+    </Grid>
+</Page>
