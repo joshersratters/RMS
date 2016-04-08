@@ -107,5 +107,10 @@ namespace RMS
         }
 
         #endregion
+
+        private void ButtonSubmit_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+        }
     }
 }

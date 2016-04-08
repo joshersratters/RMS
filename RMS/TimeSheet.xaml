@@ -21,10 +21,15 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <!-- Title Panel -->
+        <!--App Panel-->
         <StackPanel Grid.Row="0" Margin="0,0,0,0">
             <TextBlock Text="RMS" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
-            <TextBlock Text="timesheet" Margin="0,-6.5,0,26.5" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+        </StackPanel>
+        
+        <!--Title Panel-->
+        <StackPanel Margin="0,40,0,0" Orientation="Horizontal">
+            <TextBlock Text="timesheet" Margin="0,0,0,0" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
+            <Button x:Name="ButtonSubmit" Content="Submit" Tapped="ButtonSubmit_Tapped" Margin="50,15,0,0"/>
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
