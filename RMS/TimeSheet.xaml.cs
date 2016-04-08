@@ -28,6 +28,13 @@ namespace RMS
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
+        //Declare variables
+        string ProjectNameOne = "Center Parcs";
+        string ProjectNameTwo = "Healthcare";
+        int[] Day = new int[7];
+        int[] Hours = new int[7];
+        string CurentDate = DateTime.Today.ToString(); 
+
         public TimeSheet()
         {
             this.InitializeComponent();
@@ -35,6 +42,10 @@ namespace RMS
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
+
+            TextBlockProjectTitleOne.Text = ProjectNameOne;
+            TextBlockProjectTitleTwo.Text = ProjectNameTwo;
+            TextBlockWC.Text = "WC:" + CurentDate;
         }
 
         /// <summary>
@@ -110,7 +121,7 @@ namespace RMS
 
         private void ButtonSubmit_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            Hours[0] = (int.Parse(TextBoxProject1Mon.Text));
         }
     }
 }
