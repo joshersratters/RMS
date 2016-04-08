@@ -21,31 +21,245 @@
     <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\RMS.exe">
       <PackagePath>RMS.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\Logo.scale-240.png">
-      <PackagePath>Assets\Logo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\badgelogo.scale-100.png">
+      <PackagePath>Assets\badgelogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\badgelogo.scale-125.png">
+      <PackagePath>Assets\badgelogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\badgelogo.scale-140.png">
+      <PackagePath>Assets\badgelogo.scale-140.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\badgelogo.scale-150.png">
+      <PackagePath>Assets\badgelogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\badgelogo.scale-180.png">
+      <PackagePath>Assets\badgelogo.scale-180.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\badgelogo.scale-200.png">
+      <PackagePath>Assets\badgelogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\badgelogo.scale-400.png">
+      <PackagePath>Assets\badgelogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-100.png">
+      <PackagePath>Assets\largelogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-125.png">
+      <PackagePath>Assets\largelogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-140.png">
+      <PackagePath>Assets\largelogo.scale-140.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-150.png">
+      <PackagePath>Assets\largelogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-180.png">
+      <PackagePath>Assets\largelogo.scale-180.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-200.png">
+      <PackagePath>Assets\largelogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-400.png">
+      <PackagePath>Assets\largelogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\largelogo.scale-80.png">
+      <PackagePath>Assets\largelogo.scale-80.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-100.png">
+      <PackagePath>Assets\logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\RMS_logo.png">
-      <PackagePath>Assets\RMS_logo.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\SmallLogo.scale-240.png">
-      <PackagePath>Assets\SmallLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-125.png">
+      <PackagePath>Assets\logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\SplashScreen.scale-240.png">
-      <PackagePath>Assets\SplashScreen.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-140.png">
+      <PackagePath>Assets\logo.scale-140.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\Square71x71Logo.scale-240.png">
-      <PackagePath>Assets\Square71x71Logo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-150.png">
+      <PackagePath>Assets\logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\StoreLogo.scale-240.png">
-      <PackagePath>Assets\StoreLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-180.png">
+      <PackagePath>Assets\logo.scale-180.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\WideLogo.scale-240.png">
-      <PackagePath>Assets\WideLogo.scale-240.png</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-200.png">
+      <PackagePath>Assets\logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-400.png">
+      <PackagePath>Assets\logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\logo.scale-80.png">
+      <PackagePath>Assets\logo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\phonesplashscreen.scale-100.png">
+      <PackagePath>Assets\phonesplashscreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\phonesplashscreen.scale-140.png">
+      <PackagePath>Assets\phonesplashscreen.scale-140.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalllogo.scale-100.png">
+      <PackagePath>Assets\smalllogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalllogo.scale-140.png">
+      <PackagePath>Assets\smalllogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalllogo.scale-180.png">
+      <PackagePath>Assets\smalllogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalllogo.scale-80.png">
+      <PackagePath>Assets\smalllogo.scale-80.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalltilelogo.scale-100.png">
+      <PackagePath>Assets\smalltilelogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalltilelogo.scale-140.png">
+      <PackagePath>Assets\smalltilelogo.scale-140.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalltilelogo.scale-180.png">
+      <PackagePath>Assets\smalltilelogo.scale-180.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\smalltilelogo.scale-80.png">
+      <PackagePath>Assets\smalltilelogo.scale-80.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\splashscreen.scale-100.png">
+      <PackagePath>Assets\splashscreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\splashscreen.scale-125.png">
+      <PackagePath>Assets\splashscreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\splashscreen.scale-140.png">
+      <PackagePath>Assets\splashscreen.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\splashscreen.scale-150.png">
+      <PackagePath>Assets\splashscreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\splashscreen.scale-180.png">
+      <PackagePath>Assets\splashscreen.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\splashscreen.scale-200.png">
+      <PackagePath>Assets\splashscreen.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\splashscreen.scale-400.png">
+      <PackagePath>Assets\splashscreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square44x44logo.scale-100.png">
+      <PackagePath>Assets\square44x44logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square44x44logo.scale-125.png">
+      <PackagePath>Assets\square44x44logo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square44x44logo.scale-140.png">
+      <PackagePath>Assets\square44x44logo.scale-140.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square44x44logo.scale-150.png">
+      <PackagePath>Assets\square44x44logo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square44x44logo.scale-200.png">
+      <PackagePath>Assets\square44x44logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square44x44logo.scale-400.png">
+      <PackagePath>Assets\square44x44logo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square71x71logo.scale-100.png">
+      <PackagePath>Assets\square71x71logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square71x71logo.scale-125.png">
+      <PackagePath>Assets\square71x71logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square71x71logo.scale-140.png">
+      <PackagePath>Assets\square71x71logo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square71x71logo.scale-150.png">
+      <PackagePath>Assets\square71x71logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square71x71logo.scale-200.png">
+      <PackagePath>Assets\square71x71logo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\square71x71logo.scale-400.png">
+      <PackagePath>Assets\square71x71logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\storelogo.scale-100.png">
+      <PackagePath>Assets\storelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\storelogo.scale-125.png">
+      <PackagePath>Assets\storelogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\storelogo.scale-140.png">
+      <PackagePath>Assets\storelogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\storelogo.scale-150.png">
+      <PackagePath>Assets\storelogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\storelogo.scale-180.png">
+      <PackagePath>Assets\storelogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\storelogo.scale-200.png">
+      <PackagePath>Assets\storelogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\storelogo.scale-400.png">
+      <PackagePath>Assets\storelogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-100.png">
+      <PackagePath>Assets\widelogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-125.png">
+      <PackagePath>Assets\widelogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-140.png">
+      <PackagePath>Assets\widelogo.scale-140.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-150.png">
+      <PackagePath>Assets\widelogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-180.png">
+      <PackagePath>Assets\widelogo.scale-180.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-200.png">
+      <PackagePath>Assets\widelogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-400.png">
+      <PackagePath>Assets\widelogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\Assets\widelogo.scale-80.png">
+      <PackagePath>Assets\widelogo.scale-80.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\RMS.xr.xml">

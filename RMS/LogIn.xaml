@@ -18,7 +18,7 @@
 
         <!--Logo Panel-->
         <StackPanel Margin="0,120,0,410">
-            <Image x:Name="ImageLogo" Source="Assets/RMS_logo.png" ToolTipService.ToolTip="RMS" Height="100"/>
+            <Image x:Name="ImageLogo" Source="Assets/splashscreen.scale-125.png" ToolTipService.ToolTip="RMS" Height="100"/>
         </StackPanel>
 
         <!--Login Panel-->
