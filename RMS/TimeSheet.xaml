@@ -33,7 +33,7 @@
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
-        <Grid x:Name="DaysOfWeek" Grid.Row="7" Grid.Column="3" Margin="19,9.5,19,0">
+        <Grid x:Name="DaysOfWeek" Grid.Row="7" Grid.Column="3" Margin="5,9.5,5,0">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="1*"/>
@@ -53,26 +53,26 @@
                 <TextBlock Grid.Row="0" Grid.Column="1" x:Name="TextBlockProjectTitleOne" Text="Project 1" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                     <TextBlock Grid.Row="0" Grid.Column="3" x:Name="TextBlockProjectTitleTwo" Text="Project 2" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <TextBlock Grid.Row="1" Grid.Column="0" x:Name="TextBlockMon" Text="Mon" TextAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBlockProject1Mon" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
-                    <TextBox Grid.Row="1" Grid.Column="2" x:Name="TextBlockProject2Mon" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBlockProject1Mon" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                    <TextBox Grid.Row="1" Grid.Column="2" x:Name="TextBlockProject2Mon" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
             <TextBlock Grid.Row="2" Grid.Column="0" x:Name="TextBlockTue" Text="Tue" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="2" Grid.Column="1" x:Name="TextBlockProject1Tue" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
-                    <TextBox Grid.Row="2" Grid.Column="2" x:Name="TextBlockProject2Tue" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="2" Grid.Column="1" x:Name="TextBlockProject1Tue" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                    <TextBox Grid.Row="2" Grid.Column="2" x:Name="TextBlockProject2Tue" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
             <TextBlock Grid.Row="3" Grid.Column="0" x:Name="TextBlockWed" Text="Wed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="3" Grid.Column="1" x:Name="TextBlockProject1Wed" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
-                    <TextBox Grid.Row="3" Grid.Column="2" x:Name="TextBlockProject2Wed" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="3" Grid.Column="1" x:Name="TextBlockProject1Wed" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                    <TextBox Grid.Row="3" Grid.Column="2" x:Name="TextBlockProject2Wed" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
             <TextBlock Grid.Row="4" Grid.Column="0" x:Name="TextBlockThu" Text="Thu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="4" Grid.Column="1" x:Name="TextBlockProject1Thu" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
-                    <TextBox Grid.Row="4" Grid.Column="2" x:Name="TextBlockProject2Thu" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="4" Grid.Column="1" x:Name="TextBlockProject1Thu" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                    <TextBox Grid.Row="4" Grid.Column="2" x:Name="TextBlockProject2Thu" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
             <TextBlock Grid.Row="5" Grid.Column="0" x:Name="TextBlockFri" Text="Fri" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="5" Grid.Column="1" x:Name="TextBlockProject1Fri" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
-                    <TextBox Grid.Row="5" Grid.Column="2" x:Name="TextBlockProject2Fri" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="5" Grid.Column="1" x:Name="TextBlockProject1Fri" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                    <TextBox Grid.Row="5" Grid.Column="2" x:Name="TextBlockProject2Fri" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
             <TextBlock Grid.Row="6" Grid.Column="0" x:Name="TextBlockSat" Text="Sat" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="6" Grid.Column="1" x:Name="TextBlockProject1Sat" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
-                    <TextBox Grid.Row="6" Grid.Column="2" x:Name="TextBlockProject2Sat" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="6" Grid.Column="1" x:Name="TextBlockProject1Sat" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                    <TextBox Grid.Row="6" Grid.Column="2" x:Name="TextBlockProject2Sat" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
             <TextBlock Grid.Row="7" Grid.Column="0" x:Name="TextBlockSun" Text="Sun" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                <TextBox Grid.Row="7" Grid.Column="1" x:Name="TextBlockProject1Sun" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
-                    <TextBox Grid.Row="7" Grid.Column="2" x:Name="TextBlockProject2Sun" FontFamily="Global User Interface" TextAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                <TextBox Grid.Row="7" Grid.Column="1" x:Name="TextBlockProject1Sun" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+                    <TextBox Grid.Row="7" Grid.Column="2" x:Name="TextBlockProject2Sun" FontFamily="Global User Interface" TextAlignment="Center" Margin="20,0,20,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
         </Grid>
     </Grid>
 </Page>
