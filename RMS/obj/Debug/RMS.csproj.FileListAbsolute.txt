@@ -35,3 +35,40 @@ C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\qualifiers.txt
 C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\ProjectArchitectures.txt
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\App.xbf
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\TimeSheet.xbf
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\LogIn.xbf
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\RMS.xr.xml
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\RMS.exe
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\RMS.pdb
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\resources.pri
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\AppxManifest.xml
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\bin\Debug\RMS.build.appxrecipe
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\App.g.i.cs
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\App.g.cs
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\TimeSheet.g.i.cs
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\TimeSheet.g.cs
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\LogIn.g.i.cs
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\LogIn.g.cs
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\App.xaml
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\LogIn.xaml
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\App.xbf
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\LogIn.xbf
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\XamlSaveStateFile.xml
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\TimeSheet.xaml
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\TimeSheet.xbf
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\RMS.exe
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\RMS.pdb
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\priconfig.xml
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\priconfig.xml.intermediate
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\layout.resfiles
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\layout.resfiles.intermediate
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\resources.resfiles
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\resources.resfiles.intermediate
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\pri.resfiles
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\pri.resfiles.intermediate
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\qualifiers.txt
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\qualifiers.txt.intermediate
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\ProjectArchitectures.txt
