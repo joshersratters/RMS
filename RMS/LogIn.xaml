@@ -26,7 +26,7 @@
             <TextBlock x:Name="TextBlockEmail" Text="Email"/>
             <TextBox x:Name="TextBoxEmail" InputScope="EmailSmtpAddress" FontFamily="Global User Interface"/>
             <TextBlock x:Name="TextBlockPassword" Text="Password"/>
-            <TextBox x:Name="TextBoxPassword" InputScope="Default" FontFamily="Global User Interface"/>
+            <PasswordBox x:Name="PasswordBox" FontFamily="Global User Interface"/>
         </StackPanel>
         <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="145,412,0,0" VerticalAlignment="Top" Click="ButtonLogin_Click" Tapped="ButtonLogin_Tapped"/>
     </Grid>
