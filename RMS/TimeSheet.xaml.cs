@@ -29,8 +29,12 @@ namespace RMS
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
         //Declare variables
-        string ProjectNameOne = "Center Parcs";
-        string ProjectNameTwo = "Healthcare";
+        string ProjectNameOne = "";
+        string ProjectNameTwo = "";
+        string ProjectNameThree = "";
+        string ProjectNameFour = "";
+        string ProjectNameFive = "";
+        string ProjectNameSix = "";
         int[] Day = new int[7];
         int[] Hours = new int[7];
         string CurentDate = DateTime.Today.ToString(); 
@@ -42,10 +46,24 @@ namespace RMS
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
-
-            TextBlockProjectTitleOne.Text = ProjectNameOne;
-            TextBlockProjectTitleTwo.Text = ProjectNameTwo;
             TextBlockWC.Text = "WC:" + CurentDate;
+            InitialiseUI();
+        }
+
+        // Sets the Projects Variables
+        public void SetProjects()
+        {
+            ProjectNameOne = "Center Parcs";
+            ProjectNameTwo = "British Land";
+            ProjectNameThree = "Healthcare";
+        }
+
+        //Initialise TimeSheet UI elements
+        public void InitialiseUI()
+        {
+            ComboBoxProject1.Content = ProjectNameOne;
+            ComboBoxProject2.Content = ProjectNameTwo;
+            ComboBoxProject3.Content = ProjectNameThree;
         }
 
         /// <summary>
