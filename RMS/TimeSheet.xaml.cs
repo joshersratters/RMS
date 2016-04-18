@@ -30,16 +30,20 @@ namespace RMS
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
         //Declare objects
-        int ProjectIndex;
-        string ProjectNameOne = "";
-        string ProjectNameTwo = "";
-        string ProjectNameThree = "";
-        string ProjectNameFour = "";
-        string ProjectNameFive = "";
-        string ProjectNameSix = "";
+        int SelectIndex;
+        int ProjectCount = 20;
+        public string[] ProjectName = new string[6];
         int[] Day = new int[7];
         int[] Hours = new int[7];
-        string CurentDate = DateTime.Today.ToString(); 
+        string CurentDate = DateTime.Today.ToString();
+        
+        class Project
+        {
+           public string name;
+           public int hours;
+           public int index;
+
+        } 
     
         public TimeSheet()
         {
@@ -56,23 +60,32 @@ namespace RMS
         // Sets the Projects Variables
         public void SetProjects()
         {
-            ProjectNameOne = "Center Parcs";
-            ProjectNameTwo = "British Land";
-            ProjectNameThree = "Healthcare";
-            ProjectNameFour = "Project Four";
-            ProjectNameFive = "Project Five";
-            ProjectNameSix = "Project Six";
+            string[] ProjectArchive = new string[ProjectCount];
+            ProjectArchive[0] = "Center Parcs";
+            ProjectArchive[1] = "British Land";
+            ProjectArchive[2] = "Healthcare at Home";
+            ProjectArchive[3] = "Volkswagen";
+            ProjectArchive[4] = "Merlin Entertainment";
+            ProjectArchive[5] = "Carbon Trust";
+
+            int index = 0;
+
+            while (index < ProjectName.Length)
+            {
+                ProjectName[index] = ProjectArchive[index];
+                index++;
+            }            
         }
 
         //Initialise TimeSheet UI elements
         public void InitialiseUI()
         {
-            ComboBoxProject1.Content = "1. " + ProjectNameOne;
-            ComboBoxProject2.Content = "2. " + ProjectNameTwo;
-            ComboBoxProject3.Content = "3. " + ProjectNameThree;
-            ComboBoxProject4.Content = "4. " + ProjectNameFour;
-            ComboBoxProject5.Content = "5. " + ProjectNameFive;
-            ComboBoxProject6.Content = "6. " + ProjectNameSix;
+            ComboBoxProject1.Content = "1. " + ProjectName[0];
+            ComboBoxProject2.Content = "2. " + ProjectName[1];
+            ComboBoxProject3.Content = "3. " + ProjectName[2];
+            ComboBoxProject4.Content = "4. " + ProjectName[3];
+            ComboBoxProject5.Content = "5. " + ProjectName[4];
+            ComboBoxProject6.Content = "6. " + ProjectName[5];
         }
 
         //Gets the current selected project
@@ -194,7 +207,7 @@ namespace RMS
         private void ProjectComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             int CurrentProject = ProjectComboBox.SelectedIndex;
-            ProjectIndex = SelectProject(CurrentProject);
+            SelectIndex = SelectProject(CurrentProject);
         }
     }
 }
