@@ -67,12 +67,12 @@ namespace RMS
         //Initialise TimeSheet UI elements
         public void InitialiseUI()
         {
-            ComboBoxProject1.Content = ProjectNameOne;
-            ComboBoxProject2.Content = ProjectNameTwo;
-            ComboBoxProject3.Content = ProjectNameThree;
-            ComboBoxProject4.Content = ProjectNameFour;
-            ComboBoxProject5.Content = ProjectNameFive;
-            ComboBoxProject6.Content = ProjectNameSix;
+            ComboBoxProject1.Content = "1. " + ProjectNameOne;
+            ComboBoxProject2.Content = "2. " + ProjectNameTwo;
+            ComboBoxProject3.Content = "3. " + ProjectNameThree;
+            ComboBoxProject4.Content = "4. " + ProjectNameFour;
+            ComboBoxProject5.Content = "5. " + ProjectNameFive;
+            ComboBoxProject6.Content = "6. " + ProjectNameSix;
         }
 
         //Gets the current selected project
