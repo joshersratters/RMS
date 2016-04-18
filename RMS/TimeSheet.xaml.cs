@@ -28,7 +28,7 @@ namespace RMS
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        //Declare variables
+        //Declare objects
         string ProjectNameOne = "";
         string ProjectNameTwo = "";
         string ProjectNameThree = "";
@@ -47,6 +47,7 @@ namespace RMS
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
             TextBlockWC.Text = "WC:" + CurentDate;
+            SetProjects();
             InitialiseUI();
         }
 
