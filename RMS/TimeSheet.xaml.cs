@@ -57,6 +57,9 @@ namespace RMS
             ProjectNameOne = "Center Parcs";
             ProjectNameTwo = "British Land";
             ProjectNameThree = "Healthcare";
+            ProjectNameFour = "Project Four";
+            ProjectNameFive = "Project Five";
+            ProjectNameSix = "Project Six";
         }
 
         //Initialise TimeSheet UI elements
@@ -65,6 +68,9 @@ namespace RMS
             ComboBoxProject1.Content = ProjectNameOne;
             ComboBoxProject2.Content = ProjectNameTwo;
             ComboBoxProject3.Content = ProjectNameThree;
+            ComboBoxProject4.Content = ProjectNameFour;
+            ComboBoxProject5.Content = ProjectNameFive;
+            ComboBoxProject6.Content = ProjectNameSix;
         }
 
         /// <summary>

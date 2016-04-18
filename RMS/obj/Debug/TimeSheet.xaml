@@ -54,9 +54,9 @@
             <TextBlock Grid.Row="0" Grid.Column="0" x:Name="TextBlockDayTitle" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Day" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <StackPanel Grid.Row="0" Grid.Column="1" x:Name="StackPanelProject">
                 <ComboBox x:Name="ProjectComboBox" Margin="50,0,50,0" Height="Auto" PlaceholderText="Select Project">
-                    <ComboBoxItem x:Name="ComboBoxProject1" Content="Test1"/>
-                    <ComboBoxItem x:Name="ComboBoxProject2" Content="Test2"/>
-                    <ComboBoxItem x:Name="ComboBoxProject3" Content="Test3"/>
+                    <ComboBoxItem x:Name="ComboBoxProject1" Content=""/>
+                    <ComboBoxItem x:Name="ComboBoxProject2" Content=""/>
+                    <ComboBoxItem x:Name="ComboBoxProject3" Content=""/>
                     <ComboBoxItem x:Name="ComboBoxProject4" Content=""/>
                     <ComboBoxItem x:Name="ComboBoxProject5" Content=""/>
                     <ComboBoxItem x:Name="ComboBoxProject6" Content=""/>
