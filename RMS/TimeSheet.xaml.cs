@@ -15,6 +15,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
@@ -29,6 +30,7 @@ namespace RMS
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
         //Declare objects
+        int ProjectIndex;
         string ProjectNameOne = "";
         string ProjectNameTwo = "";
         string ProjectNameThree = "";
@@ -38,7 +40,7 @@ namespace RMS
         int[] Day = new int[7];
         int[] Hours = new int[7];
         string CurentDate = DateTime.Today.ToString(); 
-
+    
         public TimeSheet()
         {
             this.InitializeComponent();
@@ -71,6 +73,46 @@ namespace RMS
             ComboBoxProject4.Content = ProjectNameFour;
             ComboBoxProject5.Content = ProjectNameFive;
             ComboBoxProject6.Content = ProjectNameSix;
+        }
+
+        //Gets the current selected project
+        public int SelectProject(int ProjectNumber)
+        {
+            var index = -1;
+
+            switch (ProjectNumber)
+            {
+                case 1:
+                    index = 1;
+                    break;
+
+                case 2:
+                    index = 2;
+                    break;
+
+                case 3:
+                    index = 3;
+                    break;
+
+                case 4:
+                    index = 4;
+                    break;
+
+                case 5:
+                    index = 5;
+                    break;
+
+                case 6:
+                    index = 6;
+                    break;
+
+                case 0:
+                default:
+                    index = 0;                  
+                    break;
+            }
+
+            return index;
         }
 
         /// <summary>
@@ -147,6 +189,12 @@ namespace RMS
         private void ButtonSubmit_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Hours[0] = (int.Parse(TextBoxProject1Mon.Text));
+        }
+
+        private void ProjectComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            int CurrentProject = ProjectComboBox.SelectedIndex;
+            ProjectIndex = SelectProject(CurrentProject);
         }
     }
 }

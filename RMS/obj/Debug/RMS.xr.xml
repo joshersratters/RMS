@@ -53,6 +53,7 @@
       <RootProperty Name="Height" />
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="Items" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ComboBoxItem">
       <RootProperty Name="Content" />

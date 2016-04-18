@@ -29,7 +29,7 @@
         <!--Title Panel-->
         <StackPanel Margin="0,40,0,39.167" Orientation="Horizontal">
             <TextBlock Text="timesheet" Margin="0,0,0,0" Style="{ThemeResource HeaderTextBlockStyle}" CharacterSpacing="{ThemeResource PivotHeaderItemCharacterSpacing}"/>
-            <Button x:ConnectionId='1' x:Name="ButtonSubmit" Content="Submit"                              Margin="50,0,0,0"/>
+            <Button x:ConnectionId='2' x:Name="ButtonSubmit" Content="Submit"                              Margin="50,0,0,0"/>
         </StackPanel>
 
         <!--Week Panel-->
@@ -53,7 +53,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0" Grid.Column="0" x:Name="TextBlockDayTitle" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Day" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <StackPanel Grid.Row="0" Grid.Column="1" x:Name="StackPanelProject">
-                <ComboBox x:Name="ProjectComboBox" Margin="50,0,50,0" Height="Auto" PlaceholderText="Select Project">
+                <ComboBox x:ConnectionId='1' x:Name="ProjectComboBox" Margin="50,0,50,0" Height="Auto" PlaceholderText="Select Project"                                                    >
                     <ComboBoxItem x:Name="ComboBoxProject1" Content=""/>
                     <ComboBoxItem x:Name="ComboBoxProject2" Content=""/>
                     <ComboBoxItem x:Name="ComboBoxProject3" Content=""/>
