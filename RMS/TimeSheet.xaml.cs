@@ -30,11 +30,21 @@ namespace RMS
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
         //Declare objects
-        int SelectIndex;
+        int? SelectIndex = null;
         int ProjectCount = 20;
         public string[] ProjectName = new string[6];
-        int[] Day = new int[7];
-        int[] Hours = new int[7];
+        int[] P1Day = new int[7];
+        int[] P2Day = new int[7];
+        int[] P3Day = new int[7];
+        int[] P4Day = new int[7];
+        int[] P5Day = new int[7];
+        int[] P6Day = new int[7];
+        int[] P1Hours = new int[7];
+        int[] P2Hours = new int[7];
+        int[] P3Hours = new int[7];
+        int[] P4Hours = new int[7];
+        int[] P5Hours = new int[7];
+        int[] P6Hours = new int[7];
         string CurentDate = DateTime.Today.ToString();
         
         class Project
@@ -48,7 +58,6 @@ namespace RMS
         public TimeSheet()
         {
             this.InitializeComponent();
-
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
@@ -57,7 +66,7 @@ namespace RMS
             InitialiseUI();
         }
 
-        // Sets the Projects Variables
+        //Sets the Projects Variables
         public void SetProjects()
         {
             string[] ProjectArchive = new string[ProjectCount];
@@ -91,41 +100,112 @@ namespace RMS
         //Gets the current selected project
         public int SelectProject(int ProjectNumber)
         {
-            var index = -1;
+            var index = 0;
 
             switch (ProjectNumber)
             {
-                case 1:
+                case 0:
                     index = 1;
                     break;
 
-                case 2:
+                case 1:
                     index = 2;
                     break;
 
-                case 3:
+                case 2:
                     index = 3;
                     break;
 
-                case 4:
+                case 3:
                     index = 4;
                     break;
 
-                case 5:
+                case 4:
                     index = 5;
                     break;
 
-                case 6:
+                case 5:
                     index = 6;
                     break;
 
-                case 0:
                 default:
                     index = 0;                  
                     break;
             }
 
             return index;
+        } 
+
+        // Submits the timesheet variables to correct project
+        public void SubmitTimesheet(int ProjectNumber)
+        {
+
+            switch (ProjectNumber)
+            {
+                case 1:
+                    P1Day[0] = (int.Parse(TextBoxProjectMon.Text));
+                    P1Day[1] = (int.Parse(TextBoxProjectTue.Text));
+                    P1Day[2] = (int.Parse(TextBoxProjectWed.Text));
+                    P1Day[3] = (int.Parse(TextBoxProjectThu.Text));
+                    P1Day[4] = (int.Parse(TextBoxProjectFri.Text));
+                    P1Day[5] = (int.Parse(TextBoxProjectSat.Text));
+                    P1Day[6] = (int.Parse(TextBoxProjectSun.Text));
+                    break;
+
+                case 2:
+                    P2Day[0] = (int.Parse(TextBoxProjectMon.Text));
+                    P2Day[1] = (int.Parse(TextBoxProjectTue.Text));
+                    P2Day[2] = (int.Parse(TextBoxProjectWed.Text));
+                    P2Day[3] = (int.Parse(TextBoxProjectThu.Text));
+                    P2Day[4] = (int.Parse(TextBoxProjectFri.Text));
+                    P2Day[5] = (int.Parse(TextBoxProjectSat.Text));
+                    P2Day[6] = (int.Parse(TextBoxProjectSun.Text));
+                    break;
+
+                case 3:
+                    P3Day[0] = (int.Parse(TextBoxProjectMon.Text));
+                    P3Day[1] = (int.Parse(TextBoxProjectTue.Text));
+                    P3Day[2] = (int.Parse(TextBoxProjectWed.Text));
+                    P3Day[3] = (int.Parse(TextBoxProjectThu.Text));
+                    P3Day[4] = (int.Parse(TextBoxProjectFri.Text));
+                    P3Day[5] = (int.Parse(TextBoxProjectSat.Text));
+                    P3Day[6] = (int.Parse(TextBoxProjectSun.Text));
+                    break;
+
+                case 4:
+                    P4Day[0] = (int.Parse(TextBoxProjectMon.Text));
+                    P4Day[1] = (int.Parse(TextBoxProjectTue.Text));
+                    P4Day[2] = (int.Parse(TextBoxProjectWed.Text));
+                    P4Day[3] = (int.Parse(TextBoxProjectThu.Text));
+                    P4Day[4] = (int.Parse(TextBoxProjectFri.Text));
+                    P4Day[5] = (int.Parse(TextBoxProjectSat.Text));
+                    P4Day[6] = (int.Parse(TextBoxProjectSun.Text));
+                    break;
+
+                case 5:
+                    P5Day[0] = (int.Parse(TextBoxProjectMon.Text));
+                    P5Day[1] = (int.Parse(TextBoxProjectTue.Text));
+                    P5Day[2] = (int.Parse(TextBoxProjectWed.Text));
+                    P5Day[3] = (int.Parse(TextBoxProjectThu.Text));
+                    P5Day[4] = (int.Parse(TextBoxProjectFri.Text));
+                    P5Day[5] = (int.Parse(TextBoxProjectSat.Text));
+                    P5Day[6] = (int.Parse(TextBoxProjectSun.Text));
+                    break;
+
+                case 6:
+                    P6Day[0] = (int.Parse(TextBoxProjectMon.Text));
+                    P6Day[1] = (int.Parse(TextBoxProjectTue.Text));
+                    P6Day[2] = (int.Parse(TextBoxProjectWed.Text));
+                    P6Day[3] = (int.Parse(TextBoxProjectThu.Text));
+                    P6Day[4] = (int.Parse(TextBoxProjectFri.Text));
+                    P6Day[5] = (int.Parse(TextBoxProjectSat.Text));
+                    P6Day[6] = (int.Parse(TextBoxProjectSun.Text));
+                    break;
+
+                case 0:
+                default:
+                    break;
+            }
         }
 
         /// <summary>
@@ -199,9 +279,19 @@ namespace RMS
 
         #endregion
 
-        private void ButtonSubmit_Tapped(object sender, TappedRoutedEventArgs e)
+        private async void ButtonSubmit_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Hours[0] = (int.Parse(TextBoxProject1Mon.Text));
+            if (SelectIndex != null)
+            {
+                SubmitTimesheet(SelectIndex.Value);
+            }
+
+            else
+            {
+                MessageDialog msgbox = new MessageDialog("Please select a project");
+                await msgbox.ShowAsync();
+            }
+           
         }
 
         private void ProjectComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

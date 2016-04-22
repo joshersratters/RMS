@@ -63,19 +63,19 @@
                 </ComboBox>
             </StackPanel>
             <TextBlock Grid.Row="1" Grid.Column="0" x:Name="TextBlockMon" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Mon" TextAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxProject1Mon" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxProjectMon" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>
             <TextBlock Grid.Row="2" Grid.Column="0" x:Name="TextBlockTue" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Tue" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="2" Grid.Column="1" x:Name="TextBoxProject1Tue" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBox Grid.Row="2" Grid.Column="1" x:Name="TextBoxProjectTue" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>
             <TextBlock Grid.Row="3" Grid.Column="0" x:Name="TextBlockWed" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Wed" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="3" Grid.Column="1" x:Name="TextBoxProject1Wed" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBox Grid.Row="3" Grid.Column="1" x:Name="TextBoxProjectWed" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>
             <TextBlock Grid.Row="4" Grid.Column="0" x:Name="TextBlockThu" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Thu" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="4" Grid.Column="1" x:Name="TextBoxProject1Thu" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBox Grid.Row="4" Grid.Column="1" x:Name="TextBoxProjectThu" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>
             <TextBlock Grid.Row="5" Grid.Column="0" x:Name="TextBlockFri" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Fri" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="5" Grid.Column="1" x:Name="TextBoxProject1Fri" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBox Grid.Row="5" Grid.Column="1" x:Name="TextBoxProjectFri" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>
             <TextBlock Grid.Row="6" Grid.Column="0" x:Name="TextBlockSat" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Sat" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="6" Grid.Column="1" x:Name="TextBoxProject1Sat" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBox Grid.Row="6" Grid.Column="1" x:Name="TextBoxProjectSat" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,17.667,50,2.5" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>
             <TextBlock Grid.Row="7" Grid.Column="0" x:Name="TextBlockSun" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Sun" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-            <TextBox Grid.Row="7" Grid.Column="1" x:Name="TextBoxProject1Sun" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="0" InputScope="Number"/>
+            <TextBox Grid.Row="7" Grid.Column="1" x:Name="TextBoxProjectSun" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>
         </Grid>
     </Grid>
 </Page>
