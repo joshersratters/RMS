@@ -45,7 +45,6 @@ namespace RMS
         int[] P4Hours = new int[7];
         int[] P5Hours = new int[7];
         int[] P6Hours = new int[7];
-        string CurentDate = DateTime.Today.ToString();
         
         class Project
         {
@@ -61,9 +60,21 @@ namespace RMS
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
-            TextBlockWC.Text = "WC:" + CurentDate;
+            TextBlockWC.Text = "WC:" + GetTime();
             SetProjects();
             InitialiseUI();
+        }
+
+        public string GetTime()
+        {
+            DateTime DateAndTime = DateTime.Now;
+            string year = DateAndTime.Year.ToString();
+            string month = DateAndTime.Month.ToString();
+            string day = DateAndTime.Day.ToString();
+
+            string DateOnly = day + "/" + "0" + month + "/" + year;
+
+            return DateOnly;
         }
 
         //Sets the Projects Variables
