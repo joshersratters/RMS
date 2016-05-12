@@ -27,7 +27,7 @@ namespace RMS
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
         // Create a new array of project class
-        Project[] ProjectArchive = new Project[6];
+        List<Project> ProjectArchive = new List<Project>();
 
         // Create a Virtual Server Store
         string[] ProjectVirtualStore = new string[6];
@@ -36,8 +36,13 @@ namespace RMS
         {
            public string Name;
            public int[] Hours = new int[6];
-        } 
-    
+           
+            public Project(string Name)
+            {
+                this.Name = Name;
+            }
+        }
+
         public TimeSheet()
         {
             this.InitializeComponent();
@@ -63,26 +68,18 @@ namespace RMS
         //Populate project Virtual Store (acting as remote server)
         public void SetProjects()
         {
-            // Populate the .Name field with hard coded Strings for now
-            ProjectVirtualStore[0] = "Center Parcs";
-            ProjectVirtualStore[1] = "British Land";
-            ProjectVirtualStore[2] = "Healthcare at Home";
-            ProjectVirtualStore[3] = "Volkswagen";
-            ProjectVirtualStore[4] = "Merlin Entertainment";
-            ProjectVirtualStore[5] = "Carbon Trust";
-
-            // Create an index reference
-
-            for (int index = 0; index <= ProjectVirtualStore.Length; index++)
-            {
-                ProjectArchive[index].Name = ProjectVirtualStore[index];
-            }            
+            ProjectArchive.Add(new Project("Center Parcs"));
+            ProjectArchive.Add(new Project("British Land"));
+            ProjectArchive.Add(new Project("Healthcare at Home"));
+            ProjectArchive.Add(new Project("Volkswagen"));
+            ProjectArchive.Add(new Project("Merlin Entertainment"));
+            ProjectArchive.Add(new Project("Carbon Trust"));       
         }
 
         //Initialise TimeSheet UI elements
         public void InitialiseUI()
         {
-            //Sets combo box content (hard coded x6 currently)
+            //Sets combo box content (hard coded x6 currently)-
             ComboBoxProject1.Content = "1. " + ProjectArchive[0].Name;
             ComboBoxProject2.Content = "2. " + ProjectArchive[1].Name;
             ComboBoxProject3.Content = "3. " + ProjectArchive[2].Name;
@@ -146,7 +143,6 @@ namespace RMS
         // Submits the timesheet variables to correct project
         public void UpdateHours(int ProjectNumber)
         {
-
             ProjectArchive[ProjectNumber].Hours[0] = (int.Parse(TextBoxProjectMon.Text)); // Monday
             ProjectArchive[ProjectNumber].Hours[1] = (int.Parse(TextBoxProjectTue.Text)); // Tuesday
             ProjectArchive[ProjectNumber].Hours[2] = (int.Parse(TextBoxProjectWed.Text)); // Wednesday
