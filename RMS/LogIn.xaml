@@ -28,6 +28,6 @@
             <TextBlock x:Name="TextBlockPassword" Text="Password"/>
             <PasswordBox x:Name="PasswordBox" FontFamily="Global User Interface"/>
         </StackPanel>
-        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="145,412,0,0" VerticalAlignment="Top" Click="ButtonLogin_Click" Tapped="ButtonLogin_Tapped"/>
+        <Button x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="150,412,0,0" VerticalAlignment="Top" Tapped="ButtonLogin_Tapped"/>
     </Grid>
 </Page>

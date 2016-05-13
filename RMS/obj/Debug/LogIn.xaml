@@ -28,7 +28,7 @@
             <TextBlock x:Name="TextBlockPassword" Text="Password"/>
             <PasswordBox x:Name="PasswordBox" FontFamily="Global User Interface"/>
         </StackPanel>
-        <Button x:ConnectionId='1' x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="145,412,0,0" VerticalAlignment="Top"                                                      />
+        <Button x:ConnectionId='1' x:Name="ButtonLogin" Content="Login" HorizontalAlignment="Left" Margin="150,412,0,0" VerticalAlignment="Top"                            />
     </Grid>
 </Page>
 

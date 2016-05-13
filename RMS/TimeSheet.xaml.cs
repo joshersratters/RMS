@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.Storage;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Graphics.Display;
@@ -17,6 +18,7 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.Popups;
 
+
 // The Basic Page item template is documented at http://go.microsoft.com/fwlink/?LinkID=390556
 
 namespace RMS
@@ -25,6 +27,9 @@ namespace RMS
     {
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
+
+        //Use the ApplicationData.LocalFolder property to get the files in a StorageFolder object.
+        Windows.Storage.StorageFolder localFolder = Windows.Storage.ApplicationData.Current.LocalFolder;
 
         // Create a new list of project class
         List<Project> ProjectArchive = new List<Project>();
@@ -150,8 +155,28 @@ namespace RMS
             ProjectArchive[ProjectNumber].Hours[3] = (int.Parse(TextBoxProjectThu.Text)); // Thursday
             ProjectArchive[ProjectNumber].Hours[4] = (int.Parse(TextBoxProjectFri.Text)); // Friday
             ProjectArchive[ProjectNumber].Hours[5] = (int.Parse(TextBoxProjectSat.Text)); // Saturday
-            ProjectArchive[ProjectNumber].Hours[6] = (int.Parse(TextBoxProjectSun.Text)); // Sunday
-                    
+            ProjectArchive[ProjectNumber].Hours[6] = (int.Parse(TextBoxProjectSun.Text)); // Sunday                  
+        }
+
+        public async void PersistData()
+        {
+            //Write data to a file
+            StorageFile ProjectPersistentStore = await localFolder.CreateFileAsync("projectDataFile.txt", CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[0].Hours[0].ToString());
+        }
+
+        public async void ReadData()
+        {
+            try
+            {
+                StorageFile ProjectPersistentStore = await localFolder.GetFileAsync("projectDataFile.txt");
+                String ProjectHours = await FileIO.ReadTextAsync(ProjectPersistentStore);
+            }
+            catch (Exception)
+            {
+                // Project Hours not found
+                throw;
+            }
         }
 
         /// <summary>
@@ -230,6 +255,7 @@ namespace RMS
             if (ProjectComboBox.SelectedIndex >= 0)
             {
                 UpdateHours(ProjectComboBox.SelectedIndex);
+                PersistData();
                 UpdateUI();
             }
 

@@ -67,7 +67,6 @@
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="VerticalAlignment" />
       <RootEvent Name="Tapped" />
-      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="RMS.TimeSheet" />
     <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
