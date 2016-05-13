@@ -26,7 +26,7 @@ namespace RMS
         private NavigationHelper navigationHelper;
         private ObservableDictionary defaultViewModel = new ObservableDictionary();
 
-        // Create a new array of project class
+        // Create a new list of project class
         List<Project> ProjectArchive = new List<Project>();
 
         // Create a Virtual Server Store
@@ -35,12 +35,13 @@ namespace RMS
         class Project
         {
            public string Name;
-           public int[] Hours = new int[6];
-           
-            public Project(string Name)
-            {
+           public int[] Hours = new int[7];
+            
+           //Constructor
+           public Project(string Name)
+           {
                 this.Name = Name;
-            }
+           }
         }
 
         public TimeSheet()
