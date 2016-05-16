@@ -23,7 +23,7 @@
 
         <!--App Panel-->
         <StackPanel Grid.Row="0" Margin="0,0,0,0">
-            <TextBlock Text="RMS" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0"/>
+            <TextBlock Text="RMS" Style="{ThemeResource TitleTextBlockStyle}" Margin="0,12,0,0" Foreground="#FF4EA234"/>
         </StackPanel>
 
         <!--Title Panel-->
