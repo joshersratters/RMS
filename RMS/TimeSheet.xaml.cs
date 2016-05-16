@@ -35,7 +35,7 @@ namespace RMS
         List<Project> ProjectArchive = new List<Project>();
 
         // Create a Virtual Server Store
-        string[] ProjectVirtualStore = new string[6];
+        List<string> ProjectVirtualStore = new List<string>();
         
         class Project
         {
@@ -57,6 +57,7 @@ namespace RMS
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
             TextBlockWC.Text = "WC:" + GetTime();
             SetProjects();
+            ReadData();
             InitialiseUI();
         }
 
@@ -162,7 +163,17 @@ namespace RMS
         {
             //Write data to a file
             StorageFile ProjectPersistentStore = await localFolder.CreateFileAsync("projectDataFile.txt", CreationCollisionOption.ReplaceExisting);
-            await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[0].Hours[0].ToString());
+
+            for (int i = 0; i < ProjectArchive.Count; i++)
+            {
+                await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[0].ToString()); // Monday
+                await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[1].ToString()); // Tuesday
+                await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[2].ToString()); // Wednesday
+                await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[3].ToString()); // Thursday
+                await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[4].ToString()); // Friday
+                await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[5].ToString()); // Saturday
+                await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[6].ToString()); // Sunday
+            }
         }
 
         public async void ReadData()
@@ -171,10 +182,12 @@ namespace RMS
             {
                 StorageFile ProjectPersistentStore = await localFolder.GetFileAsync("projectDataFile.txt");
                 String ProjectHours = await FileIO.ReadTextAsync(ProjectPersistentStore);
+                ComboBoxProject1.Content = ProjectHours;
             }
             catch (Exception)
             {
-                // Project Hours not found
+                MessageDialog msgbox = new MessageDialog("Failed to load saved data.");
+                await msgbox.ShowAsync();
                 throw;
             }
         }
