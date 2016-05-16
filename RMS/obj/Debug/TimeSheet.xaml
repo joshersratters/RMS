@@ -56,14 +56,7 @@
             </Grid.ColumnDefinitions>
             <TextBlock Grid.Row="0" Grid.Column="0" x:Name="TextBlockDayTitle" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Day" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             <StackPanel Grid.Row="0" Grid.Column="1" x:Name="StackPanelProject">
-                <ComboBox x:ConnectionId='1' x:Name="ProjectComboBox" Margin="50,0,50,0" Height="Auto" PlaceholderText="Select Project"                                                    >
-                    <ComboBoxItem x:Name="ComboBoxProject1" Content=""/>
-                    <ComboBoxItem x:Name="ComboBoxProject2" Content=""/>
-                    <ComboBoxItem x:Name="ComboBoxProject3" Content=""/>
-                    <ComboBoxItem x:Name="ComboBoxProject4" Content=""/>
-                    <ComboBoxItem x:Name="ComboBoxProject5" Content=""/>
-                    <ComboBoxItem x:Name="ComboBoxProject6" Content=""/>
-                </ComboBox>
+                <ComboBox x:ConnectionId='1' x:Name="ProjectComboBox" ItemsSource="{Binding Path = ComboBoxArchive}" Margin="50,0,50,0" Height="Auto" PlaceholderText="Select Project"                                                    />
             </StackPanel>
             <TextBlock Grid.Row="1" Grid.Column="0" x:Name="TextBlockMon" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Mon" TextAlignment="Center" VerticalAlignment="Center"/>
             <TextBox Grid.Row="1" Grid.Column="1" x:Name="TextBoxProjectMon" FontFamily="Global User Interface" TextAlignment="Center" Margin="50,0,50,0" VerticalAlignment="Center" PlaceholderText="Enter hours" InputScope="Number" Text="0"/>

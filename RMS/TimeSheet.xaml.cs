@@ -36,6 +36,8 @@ namespace RMS
 
         // Create a Virtual Server Store
         List<string> ProjectVirtualStore = new List<string>();
+
+        List<ComboBoxItem> ComboBoxArchive = new List<ComboBoxItem>();
         
         class Project
         {
@@ -56,8 +58,9 @@ namespace RMS
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
             TextBlockWC.Text = "WC:" + GetTime();
-            SetProjects();
             ReadData();
+            SetProjects();
+            SetComboBoxItem();
             InitialiseUI();
         }
 
@@ -72,7 +75,18 @@ namespace RMS
             return DateOnly;
         }
 
-        //Populate project Virtual Store (acting as remote server)
+        // Populates ComboBox with Items
+        public void SetComboBoxItem()
+        {
+            for (int i = 0; i < ProjectArchive.Count; i++)
+            {
+                ComboBoxArchive.Add(new ComboBoxItem());
+                ComboBoxArchive[i].Content = ProjectArchive[i].Name;
+            }
+
+        }
+
+        // Populate project Virtual Store (acting as remote server)
         public void SetProjects()
         {
             ProjectArchive.Add(new Project("Center Parcs"));
@@ -83,16 +97,11 @@ namespace RMS
             ProjectArchive.Add(new Project("Carbon Trust"));       
         }
 
-        //Initialise TimeSheet UI elements
+        // Initialise TimeSheet UI elements
         public void InitialiseUI()
         {
-            //Sets combo box content (hard coded x6 currently)-
-            ComboBoxProject1.Content = "1. " + ProjectArchive[0].Name;
-            ComboBoxProject2.Content = "2. " + ProjectArchive[1].Name;
-            ComboBoxProject3.Content = "3. " + ProjectArchive[2].Name;
-            ComboBoxProject4.Content = "4. " + ProjectArchive[3].Name;
-            ComboBoxProject5.Content = "5. " + ProjectArchive[4].Name;
-            ComboBoxProject6.Content = "6. " + ProjectArchive[5].Name;
+            // Sets combo box content (dynamic)
+            ProjectComboBox.ItemsSource = ComboBoxArchive;
         }
 
         //Update TimeSheet UI elements
@@ -108,7 +117,7 @@ namespace RMS
             TextBoxProjectSun.Text = ProjectArchive[ProjectComboBox.SelectedIndex].Hours[6].ToString(); // Sunday
         }
 
-        //Gets the current selected project
+        // Gets the current selected project
         public int SelectProject(int ProjectNumber)
         {
             int? index;
@@ -161,7 +170,7 @@ namespace RMS
 
         public async void PersistData()
         {
-            //Write data to a file
+            // Write data to a file
             StorageFile ProjectPersistentStore = await localFolder.CreateFileAsync("projectDataFile.txt", CreationCollisionOption.ReplaceExisting);
 
             for (int i = 0; i < ProjectArchive.Count; i++)
@@ -182,7 +191,6 @@ namespace RMS
             {
                 StorageFile ProjectPersistentStore = await localFolder.GetFileAsync("projectDataFile.txt");
                 String ProjectHours = await FileIO.ReadTextAsync(ProjectPersistentStore);
-                ComboBoxProject1.Content = ProjectHours;
             }
             catch (Exception)
             {
