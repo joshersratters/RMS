@@ -37,14 +37,32 @@ namespace RMS
         // Create a Virtual Server Store
         List<string> ProjectVirtualStore = new List<string>();
 
+        // Create list of combobox items to use as archive
         List<ComboBoxItem> ComboBoxArchive = new List<ComboBoxItem>();
+
+        // Create list of feedbackMessage class
+        List<FeedbackMessage> FeedbackMessageArchive = new List<FeedbackMessage>();
+
+        class FeedbackMessage
+        {
+            public string ErrorMessage;
+            public Boolean Successful = new bool();
+            public int ErrorID;
+
+            // Contructor
+            public FeedbackMessage(string ErrorMesage, Boolean Successful, int ErrorID)
+            {
+
+            }
+
+        }
         
         class Project
         {
            public string Name;
-           public int[] Hours = new int[7];
+           public int[] Hours = new int[7]; // 7 elements for each day of week Mon - Sun
             
-           //Constructor
+           // Constructor
            public Project(string Name)
            {
                 this.Name = Name;
@@ -57,8 +75,7 @@ namespace RMS
             this.navigationHelper = new NavigationHelper(this);
             this.navigationHelper.LoadState += this.NavigationHelper_LoadState;
             this.navigationHelper.SaveState += this.NavigationHelper_SaveState;
-            TextBlockWC.Text = "WC:" + GetTime();
-            ReadData();
+           // ReadData();
             SetProjects();
             SetComboBoxItem();
             InitialiseUI();
@@ -100,6 +117,9 @@ namespace RMS
         // Initialise TimeSheet UI elements
         public void InitialiseUI()
         {
+            // Set textblock time
+            TextBlockWC.Text = GetTime();
+
             // Sets combo box content (dynamic)
             ProjectComboBox.ItemsSource = ComboBoxArchive;
         }
@@ -182,6 +202,17 @@ namespace RMS
                 await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[4].ToString()); // Friday
                 await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[5].ToString()); // Saturday
                 await FileIO.WriteTextAsync(ProjectPersistentStore, ProjectArchive[i].Hours[6].ToString()); // Sunday
+            }
+
+            if (ProjectArchive.Count != 0)
+            {
+                FeedbackMessageArchive.Add(new FeedbackMessage("Successful", true, 0));
+                TextBlockStatusFeedback.Text = FeedbackMessageArchive[0].ErrorMessage;
+                TextBlockStatusFeedback.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
+            }
+            else
+            {
+                TextBlockStatusFeedback.Text = "Not Submitted";
             }
         }
 

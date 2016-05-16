@@ -43,6 +43,7 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="Foreground" />
       <RootProperty Name="CharacterSpacing" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">

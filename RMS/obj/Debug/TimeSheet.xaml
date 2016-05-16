@@ -34,8 +34,9 @@
 
         <!--Week Panel-->
         <StackPanel Orientation="Horizontal" Margin="0,115,0,0" Grid.RowSpan="2">
-            <TextBlock x:Name="TextBlockWC" Margin="0,0,0,485" Style="{ThemeResource SubheaderTextBlockStyle}" Text="WC: "/>
+            <TextBlock x:Name="TextBlockWC" Margin="0,0,0,485" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Date"/>
             <TextBlock x:Name="TextBlockStatus" Margin="20,0,0,485" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Status: "/>
+            <TextBlock x:Name="TextBlockStatusFeedback" Margin="40,0,0,485" Style="{ThemeResource SubheaderTextBlockStyle}" Text="Unknown" Foreground="#FFF9B602"/>
         </StackPanel>
 
         <!--TODO: Content should be placed within the following grid-->
