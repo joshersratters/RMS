@@ -46,13 +46,15 @@ namespace RMS
         class FeedbackMessage
         {
             public string ErrorMessage;
-            public Boolean Successful = new bool();
+            public bool Successful;
             public int ErrorID;
 
             // Contructor
             public FeedbackMessage(string ErrorMesage, Boolean Successful, int ErrorID)
             {
-
+                this.ErrorMessage = ErrorMesage;
+                this.Successful = Successful;
+                this.ErrorID = ErrorID;
             }
 
         }
@@ -207,7 +209,7 @@ namespace RMS
             if (ProjectArchive.Count != 0)
             {
                 FeedbackMessageArchive.Add(new FeedbackMessage("Successful", true, 0));
-                TextBlockStatusFeedback.Text = FeedbackMessageArchive[0].ErrorMessage;
+                TextBlockStatusFeedback.Text = FeedbackMessageArchive.First().ErrorMessage;
                 TextBlockStatusFeedback.Foreground = new SolidColorBrush(Windows.UI.Colors.Green);
             }
             else
