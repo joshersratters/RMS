@@ -137,6 +137,9 @@ namespace RMS
             TextBoxProjectFri.Text = ProjectArchive[ProjectComboBox.SelectedIndex].Hours[4].ToString(); // Friday
             TextBoxProjectSat.Text = ProjectArchive[ProjectComboBox.SelectedIndex].Hours[5].ToString(); // Saturday
             TextBoxProjectSun.Text = ProjectArchive[ProjectComboBox.SelectedIndex].Hours[6].ToString(); // Sunday
+
+            TextBlockStatusFeedback.Text = "Unknown";
+            TextBlockStatusFeedback.Foreground = new SolidColorBrush(Windows.UI.Color.FromArgb(0xFF, 0xF9, 0xB6, 0x02));
         }
 
         // Gets the current selected project
