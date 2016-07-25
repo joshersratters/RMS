@@ -51,7 +51,7 @@ namespace RMS
         {
             await captureManager.StopPreviewAsync();  //stop camera capturing  
         }
-        async private void Capture_Photo_Click(object sender, RoutedEventArgs e)
+        async private void capturePreview_Tapped(object sender, RoutedEventArgs e)
         {
             //Create JPEG image Encoding format for storing image in JPEG type  
             ImageEncodingProperties imgFormat = ImageEncodingProperties.CreateJpeg();
@@ -65,6 +65,11 @@ namespace RMS
             BitmapImage bmpImage = new BitmapImage(new Uri(file.Path));
             // show captured image on Image UIElement.  
             imagePreview.Source = bmpImage;
+        }
+
+        private void Clear_imagePreview_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            imagePreview.Source = null;
         }
 
         /// <summary>
