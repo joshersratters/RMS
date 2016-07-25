@@ -46,12 +46,6 @@ namespace RMS
             // this event is handled for you.
         }
 
-        private void ButtonLogin_Click(object sender, RoutedEventArgs e)
-        {
-            //ButtonLogin.Background = new SolidColorBrush(Windows.UI.Colors.Red)
-            Frame.Navigate(typeof(TimeSheet));
-        }
-
         private void ButtonLogin_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Frame.Navigate(typeof(TimeSheet));
