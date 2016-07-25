@@ -262,11 +262,17 @@
       <PackagePath>Assets\widelogo.scale-80.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\StoreManifest.xml">
+      <PackagePath>StoreManifest.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\bin\Debug\RMS.xr.xml">
       <PackagePath>RMS.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\bin\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\bin\Debug\Expenses.xbf">
+      <PackagePath>Expenses.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\bin\Debug\TimeSheet.xbf">
       <PackagePath>TimeSheet.xbf</PackagePath>

@@ -82,6 +82,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Expenses.xaml.cs">
+      <DependentUpon>Expenses.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TimeSheet.xaml.cs">
       <DependentUpon>TimeSheet.xaml</DependentUpon>
     </Compile>
@@ -104,6 +107,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Expenses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TimeSheet.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -181,6 +188,7 @@
     <Content Include="Assets\widelogo.scale-200.png" />
     <Content Include="Assets\widelogo.scale-400.png" />
     <Content Include="Assets\widelogo.scale-80.png" />
+    <Content Include="StoreManifest.xml" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>

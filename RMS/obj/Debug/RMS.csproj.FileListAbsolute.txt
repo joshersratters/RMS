@@ -72,3 +72,8 @@ C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\qualifiers.txt
 C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Joshua\Documents\GitHub\RMS\RMS\obj\Debug\ProjectArchitectures.txt
+C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\bin\Debug\Expenses.xbf
+C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\Expenses.g.i.cs
+C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\Expenses.g.cs
+C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\Expenses.xaml
+C:\Users\Joshua Ratcliffe\Documents\GitHub\RMS\RMS\obj\Debug\Expenses.xbf

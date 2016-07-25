@@ -48,7 +48,7 @@ namespace RMS
 
         private void ButtonLogin_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(TimeSheet));
+            Frame.Navigate(typeof(Expenses));
         }
     }
 }

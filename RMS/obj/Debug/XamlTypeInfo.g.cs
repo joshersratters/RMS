@@ -124,8 +124,8 @@ namespace RMS.RMS_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[9];
-            _typeNameTable[0] = "RMS.TimeSheet";
+            _typeNameTable = new string[10];
+            _typeNameTable[0] = "RMS.Expenses";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "RMS.Common.NavigationHelper";
@@ -133,10 +133,11 @@ namespace RMS.RMS_XamlTypeInfo
             _typeNameTable[5] = "RMS.Common.ObservableDictionary";
             _typeNameTable[6] = "Object";
             _typeNameTable[7] = "String";
-            _typeNameTable[8] = "RMS.LogIn";
+            _typeNameTable[8] = "RMS.TimeSheet";
+            _typeNameTable[9] = "RMS.LogIn";
 
-            _typeTable = new global::System.Type[9];
-            _typeTable[0] = typeof(global::RMS.TimeSheet);
+            _typeTable = new global::System.Type[10];
+            _typeTable[0] = typeof(global::RMS.Expenses);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::RMS.Common.NavigationHelper);
@@ -144,7 +145,8 @@ namespace RMS.RMS_XamlTypeInfo
             _typeTable[5] = typeof(global::RMS.Common.ObservableDictionary);
             _typeTable[6] = typeof(global::System.Object);
             _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::RMS.LogIn);
+            _typeTable[8] = typeof(global::RMS.TimeSheet);
+            _typeTable[9] = typeof(global::RMS.LogIn);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -179,9 +181,10 @@ namespace RMS.RMS_XamlTypeInfo
             return -1;
         }
 
-        private object Activate_0_TimeSheet() { return new global::RMS.TimeSheet(); }
+        private object Activate_0_Expenses() { return new global::RMS.Expenses(); }
         private object Activate_5_ObservableDictionary() { return new global::RMS.Common.ObservableDictionary(); }
-        private object Activate_8_LogIn() { return new global::RMS.LogIn(); }
+        private object Activate_8_TimeSheet() { return new global::RMS.TimeSheet(); }
+        private object Activate_9_LogIn() { return new global::RMS.LogIn(); }
         private void MapAdd_5_ObservableDictionary(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.String, global::System.Object>)instance;
@@ -200,9 +203,9 @@ namespace RMS.RMS_XamlTypeInfo
             switch (typeIndex)
             {
 
-            case 0:   //  RMS.TimeSheet
+            case 0:   //  RMS.Expenses
                 userType = new global::RMS.RMS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_0_TimeSheet;
+                userType.Activator = Activate_0_Expenses;
                 userType.AddMemberName("NavigationHelper");
                 userType.AddMemberName("DefaultViewModel");
                 userType.SetIsLocalType();
@@ -244,9 +247,18 @@ namespace RMS.RMS_XamlTypeInfo
                 xamlType = new global::RMS.RMS_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  RMS.LogIn
+            case 8:   //  RMS.TimeSheet
                 userType = new global::RMS.RMS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_8_LogIn;
+                userType.Activator = Activate_8_TimeSheet;
+                userType.AddMemberName("NavigationHelper");
+                userType.AddMemberName("DefaultViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  RMS.LogIn
+                userType = new global::RMS.RMS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_9_LogIn;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -255,12 +267,22 @@ namespace RMS.RMS_XamlTypeInfo
         }
 
 
-        private object get_0_TimeSheet_NavigationHelper(object instance)
+        private object get_0_Expenses_NavigationHelper(object instance)
+        {
+            var that = (global::RMS.Expenses)instance;
+            return that.NavigationHelper;
+        }
+        private object get_1_Expenses_DefaultViewModel(object instance)
+        {
+            var that = (global::RMS.Expenses)instance;
+            return that.DefaultViewModel;
+        }
+        private object get_2_TimeSheet_NavigationHelper(object instance)
         {
             var that = (global::RMS.TimeSheet)instance;
             return that.NavigationHelper;
         }
-        private object get_1_TimeSheet_DefaultViewModel(object instance)
+        private object get_3_TimeSheet_DefaultViewModel(object instance)
         {
             var that = (global::RMS.TimeSheet)instance;
             return that.DefaultViewModel;
@@ -273,16 +295,28 @@ namespace RMS.RMS_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "RMS.Expenses.NavigationHelper":
+                userType = (global::RMS.RMS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RMS.Expenses");
+                xamlMember = new global::RMS.RMS_XamlTypeInfo.XamlMember(this, "NavigationHelper", "RMS.Common.NavigationHelper");
+                xamlMember.Getter = get_0_Expenses_NavigationHelper;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "RMS.Expenses.DefaultViewModel":
+                userType = (global::RMS.RMS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RMS.Expenses");
+                xamlMember = new global::RMS.RMS_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "RMS.Common.ObservableDictionary");
+                xamlMember.Getter = get_1_Expenses_DefaultViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
             case "RMS.TimeSheet.NavigationHelper":
                 userType = (global::RMS.RMS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RMS.TimeSheet");
                 xamlMember = new global::RMS.RMS_XamlTypeInfo.XamlMember(this, "NavigationHelper", "RMS.Common.NavigationHelper");
-                xamlMember.Getter = get_0_TimeSheet_NavigationHelper;
+                xamlMember.Getter = get_2_TimeSheet_NavigationHelper;
                 xamlMember.SetIsReadOnly();
                 break;
             case "RMS.TimeSheet.DefaultViewModel":
                 userType = (global::RMS.RMS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RMS.TimeSheet");
                 xamlMember = new global::RMS.RMS_XamlTypeInfo.XamlMember(this, "DefaultViewModel", "RMS.Common.ObservableDictionary");
-                xamlMember.Getter = get_1_TimeSheet_DefaultViewModel;
+                xamlMember.Getter = get_3_TimeSheet_DefaultViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             }
